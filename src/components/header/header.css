@@ -1,5 +1,5 @@
 .nav {
-  padding: 10px;
+  padding: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -28,4 +28,14 @@
   margin: 0 1rem;
   text-decoration-color: rgba(255, 255, 255, 1);
   color: #f6f7f8;
+}
+
+@media (max-width: 420px) {
+  .nav .nav__container {
+    flex-direction: column;
+  }
+
+  .nav .nav__container .nav__item {
+    padding: 15px 0;
+  }
 }
